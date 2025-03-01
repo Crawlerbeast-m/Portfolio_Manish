@@ -1,0 +1,300 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Manish -Skills</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap"
+      rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+
+    <style>
+      body {
+          margin: 0;
+          padding: 0;
+          background-color: rgb(0, 0, 33);
+      }
+
+      .container {
+          max-width: 900px;
+          margin: 0 auto;
+          padding: 20px;
+      }
+
+      section {
+          margin-bottom: 40px;
+      }
+
+      h2 {
+          color: #333;
+          text-align: center;
+          padding-bottom: 10px;
+          border-bottom: 2px solid #333;
+      }
+
+      p {
+          line-height: 1.6;
+          color: #555;
+      }
+
+      /* Apply grid layout directly to the UL */
+      .skills-list ul {
+          display: grid;
+          grid-template-columns: repeat(2, 1fr); /* Create 2 equal columns */
+          gap: 15px; /* Space between grid items */
+          padding: 0; /* Remove default padding */
+          list-style-type: none; /* Remove default list styling */
+      }
+
+      .skill-detail {
+          display: none;
+          margin-top: 10px;
+          padding: 5px;
+          background-color: #f9f9f9;
+          border: 1px solid #ddd;
+          border-radius: 5px;
+      }
+
+      .education li {
+          background-color: #fff;
+          color: black;
+          margin: 8px 0;
+          padding: 10px;
+          border-radius: 5px;
+          cursor: pointer;
+          box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+      }
+
+    </style>
+
+</head>
+<body>
+
+    <header>
+        <nav>
+          <div class="left">MANISH'S PORTFOLIO</div>
+          <div class="right">
+            <ul>
+                <li><a href="index.html">HOME</a></li>
+                <li><a href="about.html">ABOUT</a></li>
+                <li><a href="programming.html">PROGRAMMING LANGUAGES</a></li>
+                <li><a href="skills.html">SKILLS</a></li>
+                <li><a href="projects.html">PROJECTS</a></li>
+                <li><a href="contactme.html">CONTACT ME</a></li>
+              </ul>
+          </div>
+        </nav>
+    </header>
+
+    <main>
+      <div class="container">
+        <!-- DevOps Section -->
+        <section class="devops education">
+            <h2>DevOps Skills</h2>
+            <p>DevOps combines development and IT operations practices, and I have gained hands-on experience in implementing DevOps methodologies to streamline workflows and automation. Below are the key DevOps skills I have:</p>
+            
+            <div class="skills-list">
+                <ul>
+                    <li onclick="toggleDetail('devops-detail-1')">
+                        <strong>Continuous Integration/Continuous Deployment (CI/CD)</strong>
+                        <div id="devops-detail-1" class="skill-detail">
+                            Proficient in Jenkins, GitLab CI, and CircleCI to automate testing, building, and deployment processes.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('devops-detail-2')">
+                        <strong>Version Control</strong>
+                        <div id="devops-detail-2" class="skill-detail">
+                            Extensive experience using Git for version control and collaboration with GitHub and Bitbucket.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('devops-detail-3')">
+                        <strong>Containerization & Orchestration</strong>
+                        <div id="devops-detail-3" class="skill-detail">
+                            Expertise in Docker for containerizing applications and Kubernetes for orchestrating containers.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('devops-detail-4')">
+                        <strong>Infrastructure as Code (IaC)</strong>
+                        <div id="devops-detail-4" class="skill-detail">
+                            Skilled in using Terraform and Ansible for provisioning and configuring cloud infrastructure.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- AWS Section -->
+        <section class="aws education">
+            <h2>AWS Skills</h2>
+            <p>AWS provides a comprehensive cloud platform for deploying, managing, and scaling applications. Here are the key AWS services I have hands-on experience with:</p>
+
+            <div class="skills-list">
+                <ul>
+                    <li onclick="toggleDetail('aws-detail-1')">
+                        <strong>AWS EC2</strong>
+                        <div id="aws-detail-1" class="skill-detail">
+                            Proficient in provisioning, configuring, and managing EC2 instances to host web applications.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('aws-detail-2')">
+                        <strong>AWS S3</strong>
+                        <div id="aws-detail-2" class="skill-detail">
+                            Experience with creating and managing S3 buckets for file storage and backups.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('aws-detail-3')">
+                        <strong>AWS Lambda</strong>
+                        <div id="aws-detail-3" class="skill-detail">
+                            Expertise in creating serverless applications using AWS Lambda to execute code without provisioning servers.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <!-- Frontend Skills Section -->
+        <section class="frontend education">
+            <h2>Frontend Skills (JavaScript & CSS)</h2>
+            <p>Frontend development is crucial for building interactive and visually appealing web applications. Below are the key JavaScript and CSS skills I have:</p>
+
+            <div class="skills-list">
+                <ul>
+                    <!-- JavaScript Skills -->
+                    <li onclick="toggleDetail('frontend-detail-1')">
+                        <strong>ES6+ Syntax</strong>
+                        <div id="frontend-detail-1" class="skill-detail">
+                            Familiar with modern JavaScript features like arrow functions, destructuring, async/await, and template literals.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('frontend-detail-2')">
+                        <strong>DOM Manipulation</strong>
+                        <div id="frontend-detail-2" class="skill-detail">
+                            Experience in interacting with and manipulating the DOM to dynamically update the content of web pages.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('frontend-detail-3')">
+                        <strong>Asynchronous Programming</strong>
+                        <div id="frontend-detail-3" class="skill-detail">
+                            Expertise in using Promises and Async/Await to handle asynchronous code and manage API calls.
+                        </div>
+                    </li>
+
+                    <!-- CSS Skills -->
+                    <li onclick="toggleDetail('frontend-detail-4')">
+                        <strong>Responsive Design</strong>
+                        <div id="frontend-detail-4" class="skill-detail">
+                            Proficient in creating responsive designs using media queries and frameworks like Bootstrap.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('frontend-detail-5')">
+                        <strong>CSS Grid & Flexbox</strong>
+                        <div id="frontend-detail-5" class="skill-detail">
+                            Experience with layout systems like CSS Grid and Flexbox to create complex, responsive layouts.
+                        </div>
+                    </li>
+                    <li onclick="toggleDetail('frontend-detail-6')">
+                        <strong>Animations & Transitions</strong>
+                        <div id="frontend-detail-6" class="skill-detail">
+                            Skilled in creating smooth animations and transitions for enhancing user experience.
+                        </div>
+                    </li>
+                </ul>
+            </div>
+        </section>
+
+        <section class="automation-testing education">
+          <h2>Automation Testing Skills</h2>
+          <p>Automation testing helps ensure the quality and performance of software. Below are the key tools and techniques I have experience with:</p>
+
+          <div class="skills-list">
+              <ul>
+                  <li onclick="toggleDetail('automation-detail-1')">
+                      <strong>Selenium</strong>
+                      <div id="automation-detail-1" class="skill-detail">
+                          Proficient in using Selenium WebDriver for automating web application testing, including script creation in Java, Python, and JavaScript.
+                      </div>
+                  </li>
+                  <li onclick="toggleDetail('automation-detail-2')">
+                      <strong>SoapUI</strong>
+                      <div id="automation-detail-2" class="skill-detail">
+                          Experience using SoapUI for functional testing of SOAP and REST web services.
+                      </div>
+                  </li>
+                  <li onclick="toggleDetail('automation-detail-3')">
+                      <strong>BDD with Cucumber</strong>
+                      <div id="automation-detail-3" class="skill-detail">
+                          Expertise in Behavior-Driven Development (BDD) using Cucumber for writing test scenarios in Gherkin syntax and integrating with Selenium.
+                      </div>
+                  </li>
+                  <li onclick="toggleDetail('automation-detail-4')">
+                      <strong>REST API Testing</strong>
+                      <div id="automation-detail-4" class="skill-detail">
+                          Proficient in testing REST APIs using tools like Postman and automating REST API testing with Java and Python.
+                      </div>
+                  </li>
+                  <li onclick="toggleDetail('automation-detail-5')">
+                      <strong>SQL</strong>
+                      <div id="automation-detail-5" class="skill-detail">
+                          Strong knowledge of SQL for database testing, query validation, and writing SQL scripts for test data creation and verification.
+                      </div>
+                  </li>
+              </ul>
+          </div>
+      </section>
+
+    </div>
+
+    </main>
+
+    <footer>
+      <div class="footer">
+        <div class="footer-first">
+        </div>
+        <div class="footer-second">
+          <ul>
+          <li><a href="certifications.html">Certifications</a></li>
+          <li><a href="https://www.linkedin.com/in/manish-rawat-3120b1223">LinkedIn</a></li>
+          <li><a href="">Services</a></li>
+          <li><a href="https://www.instagram.com/manish_rawat_800">Instagram</a></li>
+          <li><a href="https://www.credly.com/users/manish-rawat.ec5067b1">Credly</a></li>
+        </ul>
+        </div>
+        <div class="footer-third">
+  
+        </div>
+        <div class="footer-fourth">
+  
+        </div>
+      </div>
+      <div class="footer-text-center">
+        Copyright © www.manishportfolio.com | All rights reserved
+      </div>
+    </footer>
+
+    <script>
+      // Function to toggle visibility of skill details
+      // Function to toggle visibility of skill details
+function toggleDetail(skillId) {
+    // Get all skill details and hide them
+    const allSkillDetails = document.querySelectorAll('.skill-detail');
+    allSkillDetails.forEach((detail) => {
+        if (detail !== document.getElementById(skillId)) {
+            detail.style.display = 'none'; // Hide other skill details
+        }
+    });
+
+    // Toggle the clicked skill detail
+    const skillDetail = document.getElementById(skillId);
+    if (skillDetail.style.display === "none" || skillDetail.style.display === "") {
+        skillDetail.style.display = "block";
+    } else {
+        skillDetail.style.display = "none";
+    }
+}
+
+    </script>
+</body>
+</html>
