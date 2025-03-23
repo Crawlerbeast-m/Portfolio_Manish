@@ -122,23 +122,23 @@ section{
     animation-fill-mode: both;
 }
 .section-A{
-    background-image: url("images/z_sec2.jpeg");
+    background-image: url("spaceX_z_sec2.jpg");
  }
  /* SECTION B */
 .section-B{
-    background-image: url("images/z_sec8.jpg");
+    background-image: url("spaceX_z_sec3.jpg");
  }
  /* SECTION C */
  .section-C{
-    background-image: url("images/z_sec7.jpg");
+    background-image: url("spaceX_new1.png");
  }
  /* SECTION D */
  .section-D{
-    background-image: url("images/z_sec6.jpg");
+    background-image: url("spaceX_new2.png");
  }
   /* SECTION E */
 .section-E{
-    background-image: url("images/z_sec9.webp");
+    background-image: url("spaceX_new3.png");
  }
 .btn{
     position: relative;
