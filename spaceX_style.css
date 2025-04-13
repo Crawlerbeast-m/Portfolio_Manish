@@ -247,6 +247,15 @@ footer ul li a:hover{
 .bg-dragon{
     background-image: url("spaceX_dragon.png");
 }
+.bg-rideshare{
+    background-image: url("spaceX_rideshare.png");
+}
+.bg-starship{
+    background-image: url("spaceX_starship.png");
+}
+.bg-spaceflight{
+    background-image: url("spaceX_spaceflight.png");
+}
 .section-animate{
     animation: fadeIn 2s ease-in-out;
 }
@@ -448,3 +457,86 @@ footer ul li{
     margin-bottom: 20px;
 }
 }
+
+/* Background Hero Section */
+.starlink-hero {
+    background-image: url('spaceX_starlink.jpeg'); /* Replace with the actual image path */
+    background-size: cover;
+    background-position: center;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+    color: white;
+    flex-direction: column;
+    padding: 0 20px;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    font-weight: 700;
+    line-height: 1.2;
+  }
+  
+  .hero-content p {
+    font-size: 1.25rem;
+    margin: 15px 0;
+  }
+  
+  .watch-now-btn {
+    font-size: 1rem;
+    color: white;
+    text-decoration: none;
+    border-bottom: 1px solid white;
+    margin-top: 10px;
+  }
+  
+  /* Service Cards */
+  .starlink-services {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    padding: 40px 20px;
+    background-color: black;
+    flex-wrap: wrap;
+  }
+  
+  .service-card {
+    background: rgba(255, 255, 255, 0.05);
+    border-radius: 10px;
+    padding: 30px;
+    color: white;
+    max-width: 350px;
+    flex: 1 1 300px;
+    backdrop-filter: blur(10px);
+  }
+  
+  .service-card h2 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+  }
+  
+  .card-buttons {
+    margin-top: 20px;
+  }
+  
+  .btn-primary, .btn-secondary {
+    display: inline-block;
+    margin-right: 10px;
+    padding: 10px 20px;
+    font-weight: bold;
+    border-radius: 4px;
+    text-decoration: none;
+  }
+  
+  .btn-primary {
+    background: white;
+    color: black;
+  }
+  
+  .btn-secondary {
+    border: 1px solid white;
+    color: white;
+  }
+  
