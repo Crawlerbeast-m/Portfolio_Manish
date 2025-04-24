@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Data Migration Flow</title>
+  <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 p-6">
+  <h1 class="text-3xl font-bold mb-6 text-center text-blue-700">Data Migration Flow Using AWS Lambda</h1>
+  
+  <div class="flex flex-wrap justify-center gap-4 items-center text-center text-white font-medium">
+    <div class="bg-yellow-500 p-4 rounded-xl shadow-md">S3 Bucket</div>
+    <div class="bg-green-600 p-4 rounded-xl shadow-md">Lambda 1<br><small>Trigger on S3 Upload</small></div>
+    <div class="bg-purple-600 p-4 rounded-xl shadow-md">SQS Queue</div>
+    <div class="bg-green-600 p-4 rounded-xl shadow-md">Lambda 2<br><small>Processes Queue</small></div>
+    <div class="bg-blue-600 p-4 rounded-xl shadow-md">AWS Glue</div>
+    <div class="bg-green-600 p-4 rounded-xl shadow-md">Lambda 3<br><small>Moves to Snowflake</small></div>
+    <div class="bg-gray-800 p-4 rounded-xl shadow-md">Snowflake</div>
+    <div class="bg-green-600 p-4 rounded-xl shadow-md">Lambda 4<br><small>Sends Notification</small></div>
+    <div class="bg-pink-500 p-4 rounded-xl shadow-md">SNS / Email</div>
+  </div>
+  <div class="flex justify-center mt-10">
+    <img src="DataMigration1.png" alt="Migration Architecture Diagram" class="rounded-lg shadow-md w-1/2" />
+  </div>
+</body>
+</html>
